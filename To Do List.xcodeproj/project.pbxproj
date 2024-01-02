@@ -47,6 +47,7 @@
 		844654B92B432FFD00F40B21 /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844654B82B432FFD00F40B21 /* RegisterViewViewModel.swift */; };
 		844654BB2B43300D00F40B21 /* ToDoListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844654BA2B43300D00F40B21 /* ToDoListViewViewModel.swift */; };
 		844654BD2B43302200F40B21 /* ToDoListItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844654BC2B43302200F40B21 /* ToDoListItemViewViewModel.swift */; };
+		844654BF2B43358700F40B21 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844654BE2B43358700F40B21 /* Extentions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		844654B82B432FFD00F40B21 /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
 		844654BA2B43300D00F40B21 /* ToDoListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewViewModel.swift; sourceTree = "<group>"; };
 		844654BC2B43302200F40B21 /* ToDoListItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemViewViewModel.swift; sourceTree = "<group>"; };
+		844654BE2B43358700F40B21 /* Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 		8446549B2B431EF600F40B21 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				844654BE2B43358700F40B21 /* Extentions.swift */,
 				844654662B42F7E900F40B21 /* Assets.xcassets */,
 				844654992B42FAE200F40B21 /* GoogleService-Info.plist */,
 				844654622B42F7E700F40B21 /* To_Do_ListApp.swift */,
@@ -291,6 +294,7 @@
 				844654B92B432FFD00F40B21 /* RegisterViewViewModel.swift in Sources */,
 				844654A52B432EE500F40B21 /* ToDoListItemView.swift in Sources */,
 				844654652B42F7E700F40B21 /* MainView.swift in Sources */,
+				844654BF2B43358700F40B21 /* Extentions.swift in Sources */,
 				844654B32B432FD600F40B21 /* ProfileViewViewModel.swift in Sources */,
 				844654A12B432EB000F40B21 /* ProfileView.swift in Sources */,
 				844654AD2B432F6900F40B21 /* User.swift in Sources */,
