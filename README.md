@@ -22,6 +22,19 @@ https://github.com/akashgamage/To-Do-List.git
 - Select a iOS simulator or connect your iOS device.
 - Press the "Run" button in Xcode to build and run the application.
 
+
+### Register the app hiting the SignUp Button
+### Or
+
+- Use the email as:
+  ```bash
+  bakashgamage@gmail.com
+  ```
+- Use the Password as:
+  ```bash
+  ToDoList
+  ```
+
 ## Video
 
 [![YouTube](https://img.youtube.com/vi/Iq0UVZnAGCo/0.jpg)](https://www.youtube.com/watch?v=Iq0UVZnAGCo)
