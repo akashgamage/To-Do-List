@@ -19,7 +19,7 @@ struct RegisterView: View {
 struct imageOverlay: View {
     var body: some View{
         ScrollView {
-            VStack {
+            VStack (alignment: .center) {
                 Image("Register")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
@@ -49,6 +49,7 @@ struct BodyView: View {
 //                .rotationEffect(Angle(degrees: -20))
                 
             
+        VStack (alignment: .center) {
             VStack (alignment: .leading) {
                 
                 // Header
@@ -67,8 +68,10 @@ struct BodyView: View {
                 }
                 .padding(.horizontal, 32)
                 .padding(.vertical, 64)
+                .padding(.top)
                 
                 Spacer()
+                    .frame(height: UIScreen.main.bounds.height * 0.08)
                 
                 // Login
                 VStack (alignment: .leading) {
@@ -131,6 +134,7 @@ struct BodyView: View {
             .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: UIScreen.main.bounds.height)
         }
     }
+}
 
 #Preview {
     RegisterView()

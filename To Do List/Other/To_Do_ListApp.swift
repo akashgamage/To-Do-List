@@ -10,12 +10,23 @@ import SwiftUI
 
 @main
 struct To_Do_ListApp: App {
-    init() {
-        FirebaseApp.configure()
+//    init() {
+//        FirebaseApp.configure()
+//    }
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
+    class AppDelegate: NSObject, UIApplicationDelegate {
+        func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+            FirebaseApp.configure()
+            
+            return true
+        }
     }
+    
     var body: some Scene {
         WindowGroup {
-            MainView()
+            SplashScreenView()
         }
     }
 }

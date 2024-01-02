@@ -48,6 +48,8 @@
 		844654BB2B43300D00F40B21 /* ToDoListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844654BA2B43300D00F40B21 /* ToDoListViewViewModel.swift */; };
 		844654BD2B43302200F40B21 /* ToDoListItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844654BC2B43302200F40B21 /* ToDoListItemViewViewModel.swift */; };
 		844654BF2B43358700F40B21 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844654BE2B43358700F40B21 /* Extentions.swift */; };
+		848844B12B4446E5003C157E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848844B02B4446E5003C157E /* ViewController.swift */; };
+		849B25712B440FB8006AB77B /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B25702B440FB8006AB77B /* SplashScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +75,8 @@
 		844654BA2B43300D00F40B21 /* ToDoListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewViewModel.swift; sourceTree = "<group>"; };
 		844654BC2B43302200F40B21 /* ToDoListItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemViewViewModel.swift; sourceTree = "<group>"; };
 		844654BE2B43358700F40B21 /* Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		848844B02B4446E5003C157E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		849B25702B440FB8006AB77B /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,7 @@
 				844654662B42F7E900F40B21 /* Assets.xcassets */,
 				844654992B42FAE200F40B21 /* GoogleService-Info.plist */,
 				844654622B42F7E700F40B21 /* To_Do_ListApp.swift */,
+				848844B02B4446E5003C157E /* ViewController.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 				844654A62B432EF300F40B21 /* NewItemView.swift */,
 				844654A82B432F0200F40B21 /* LoginView.swift */,
 				844654AA2B432F0D00F40B21 /* RegisterView.swift */,
+				849B25702B440FB8006AB77B /* SplashScreenView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -296,7 +302,9 @@
 				844654652B42F7E700F40B21 /* MainView.swift in Sources */,
 				844654BF2B43358700F40B21 /* Extentions.swift in Sources */,
 				844654B32B432FD600F40B21 /* ProfileViewViewModel.swift in Sources */,
+				848844B12B4446E5003C157E /* ViewController.swift in Sources */,
 				844654A12B432EB000F40B21 /* ProfileView.swift in Sources */,
+				849B25712B440FB8006AB77B /* SplashScreenView.swift in Sources */,
 				844654AD2B432F6900F40B21 /* User.swift in Sources */,
 				844654AB2B432F0D00F40B21 /* RegisterView.swift in Sources */,
 				844654A32B432ED100F40B21 /* ToDoListView.swift in Sources */,
@@ -442,6 +450,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -469,6 +478,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
