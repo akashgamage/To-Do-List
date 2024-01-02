@@ -37,7 +37,7 @@ struct ToDoListView: View {
                             .tint(.red)
                         }
                 }
-                .listStyle(PlainListStyle())
+                .listStyle(.plain)
             }
             .navigationTitle("To Do List")
             .toolbar {
@@ -56,5 +56,5 @@ struct ToDoListView: View {
 }
 
 #Preview {
-    ToDoListView(userId: "")
+    ToDoListView(userId: "6fIkVaBI48V6moTF5hYhqv08Cuq1")
 }

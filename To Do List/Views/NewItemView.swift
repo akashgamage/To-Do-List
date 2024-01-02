@@ -16,11 +16,16 @@ struct NewItemView: View {
             Text("New Item")
                 .font(.system(size: 32))
                 .bold()
-                .padding(.vertical, 32)
+                .padding(.vertical, 16)
             
             Form {
                 // Title
                 TextField("Title", text: $viewModel.title)
+                    .padding(.vertical,8)
+                    .textFieldStyle(DefaultTextFieldStyle())
+                
+                // Description
+                TextField("Description", text: $viewModel.description)
                     .padding(.vertical,8)
                     .textFieldStyle(DefaultTextFieldStyle())
                 

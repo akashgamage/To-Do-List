@@ -11,6 +11,7 @@ import Foundation
 
 class NewItemViewViewModel: ObservableObject {
     @Published var title = ""
+    @Published var description = ""
     @Published var dueDate = Date()
     @Published var showAlert = false
     
@@ -31,6 +32,7 @@ class NewItemViewViewModel: ObservableObject {
         let newItem = ToDoListItem(
             id: newId,
             title: title,
+            description: description,
             dueDate: dueDate.timeIntervalSince1970,
             createDate: Date().timeIntervalSince1970,
             isDone: false
@@ -49,6 +51,10 @@ class NewItemViewViewModel: ObservableObject {
         guard !title.trimmingCharacters(in: .whitespaces).isEmpty else {
             return false
         }
+        
+//        guard !description.trimmingCharacters(in: .whitespaces).isEmpty else {
+//            return false
+//        }
         
         guard dueDate >= Date().addingTimeInterval(-86400) else {
             return false

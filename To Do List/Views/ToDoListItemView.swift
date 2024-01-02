@@ -8,8 +8,24 @@
 import SwiftUI
 
 struct ToDoListItemView: View {
-    @StateObject var viewModel = ProfileViewViewModel()
+    @StateObject var viewModel = ToDoListItemViewViewModel()
     let item: ToDoListItem
+    
+    let colors: [Color] = [
+        .red,
+        .blue,
+        .green,
+        .purple,
+        .orange,
+        .cyan,
+        .yellow,
+        .pink,
+    ]
+    
+    func randomColor() -> Color {
+        return colors.randomElement() ?? .black
+    }
+    
     
     var body: some View {
         HStack {
@@ -17,10 +33,14 @@ struct ToDoListItemView: View {
                 Text(item.title)
                     .font(.headline)
                 
+                Text(item.description)
+                    .font(.subheadline)
+                
                 Text("\(Date(timeIntervalSince1970: item.dueDate).formatted(date: .abbreviated, time: .standard))")
                     .font(.footnote)
                     .foregroundColor(Color(.secondaryLabel))
             }
+            .padding(16)
             Spacer()
             
             Button {
@@ -32,8 +52,13 @@ struct ToDoListItemView: View {
                     .frame(width: 24, height: 24)
                     .foregroundColor(item.isDone ? .blue : .red.opacity(0.5))
             }
-            
+            .padding(.horizontal,16)
         }
+        .frame(maxWidth: .infinity, maxHeight: 124)
+        .background(
+            RoundedRectangle(cornerRadius: 10)
+                .fill(randomColor().opacity(0.5))
+        )
     }
 }
 
@@ -41,6 +66,7 @@ struct ToDoListItemView: View {
     ToDoListItemView(item: .init(
         id: "123",
         title: "Task",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         dueDate: Date().timeIntervalSince1970,
         createDate: Date().timeIntervalSince1970,
         isDone: false
