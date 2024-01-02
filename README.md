@@ -23,3 +23,5 @@ https://github.com/akashgamage/To-Do-List.git
 - Press the "Run" button in Xcode to build and run the application.
 
 ## Video
+
+[![YouTube](https://img.youtube.com/vi/Iq0UVZnAGCo/0.jpg)](https://www.youtube.com/watch?v=Iq0UVZnAGCo)
